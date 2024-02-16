@@ -10,9 +10,11 @@ a { color:#333; text-decoration:none; }
 .scriptCalendar > thead > tr:last-child > td { background-color:#fff; color: #777; font-weight: bold; border-top: 1px solid #efefef;}
 .scriptCalendar > thead > tr > td.day { font-size: 22px; color: #333;}
 
-.scriptCalendar .calendarBtn { cursor:pointer; } 
-.scriptCalendar .calendarBtn.back { background: url('/img/arrow_back.png') no-repeat center;} 
-.scriptCalendar .calendarBtn.forward { background: url('/img/arrow_forward.png') no-repeat center;} 
+.scriptCalendar .calendarBtn { cursor:pointer; transition: 0.5s; background-repeat: no-repeat; background-position: center;} 
+.scriptCalendar .calendarBtn.back { background-image: url('/img/arrow_back.png'); } 
+.scriptCalendar .calendarBtn.back:hover { background-image: url('/img/arrow_back_g.png');} 
+.scriptCalendar .calendarBtn.forward { background-image: url('/img/arrow_forward.png');} 
+.scriptCalendar .calendarBtn.forward:hover { background-image: url('/img/arrow_forward_g.png');} 
 .scriptCalendar .calendarBtn.back, .scriptCalendar .calendarBtn.forward { background-size: 35px auto;} 
 
 .scriptCalendar > tbody > tr > td { width:50px; height:110px; border: 1px solid #efefef;}
@@ -25,7 +27,7 @@ a { color:#333; text-decoration:none; }
 .scriptCalendar tbody tr .status_box {height: calc(100% - 32px); flex-direction: column; align-items: flex-start; gap: 8px;}
 /* .scriptCalendar tbody tr .status_box ul {display: flex; justify-content: flex-start; align-items: center; gap: 12px;} */
 .scriptCalendar tbody tr .status_box ul li {display: inline-block; font-size: 14px;}
-.scriptCalendar tbody tr .status_box ul li span {background-color: #888; font-size: 12px;  border-radius: 4px; padding: 1px 4px 2px; margin-right: 4px; color: #fff;}
+.scriptCalendar tbody tr .status_box ul li span {background-color: #888; font-size: 12px;  border-radius: 5px; padding: 1px 4px 2px; margin-right: 4px; color: #fff;}
 .scriptCalendar tbody tr .status_box ul li span.sta_01 {background-color: #EE2E5B;}
 .scriptCalendar tbody tr .status_box ul li span.sta_02 {background-color: rgb(103, 148, 220);}
 
@@ -56,20 +58,20 @@ a { color:#333; text-decoration:none; }
 .consent_txt_box li p {margin-left: 18px;}
 .consent_txt_box li p:first-child {font-weight: 600; margin-left: 0;}
 
-.consent_box { font-weight: 600; background-color: #f5f5f5; border-radius: 8px; padding: 24px; margin: 18px 0; display: flex; justify-content: center; align-items: center; gap: 16px;}
+.consent_box { font-weight: 600; background-color: #f5f5f5; border-radius: 5px; padding: 24px; margin: 18px 0; display: flex; justify-content: center; align-items: center; gap: 16px;}
 
 .page_bt_box {display: flex; justify-content: center; align-items: center; gap: 18px;}
-.page_bt_box input {height: 40px; width: 107px; background: #393d49;border: 0; border-radius: 6px; cursor: pointer; text-align: center; font-size: 15px; font-weight: 400;color: #fff; transition: 0.3s;}
+.page_bt_box input {font-size: 15px; height: 40px; width: 107px; background: #393d49;border: 0; border-radius: 5px; cursor: pointer; text-align: center; font-size: 15px; font-weight: 400;color: #fff; transition: 0.3s;}
 .page_bt_box input:hover {background-color: #008631;}
 
 
 .inputList_t {text-align: right; font-size: 14px; margin-bottom: 4px; color: #666}
-.inputList {width: 100%; border-spacing: 0px; font-size: 14px;}
+.inputList {width: 100%; border-spacing: 0px;}
 .inputList tbody > tr {}
 .inputList tbody > tr > td {padding-left: 14px;}
-.inputList tbody > tr > td:nth-child(odd) {width: 90px; font-weight: 600;}
-.inputList tbody > tr > td:nth-child(odd) label.essential::before {content:'*'; color: rgb(43, 43, 255);}
-.inputList tbody > tr > td:nth-child(even) {width: calc(100% - 90px);}
-.inputList tbody > tr.double > td:nth-child(even) {width: calc(100% - 240px);}
-.inputList tbody > tr > td:nth-child(even) input {width: 100%; height: 40px; margin: 6px 0; border: 1px solid #bebebe; border-radius: 6px; padding: 4px 8px;}
+.inputList tbody > tr > td:nth-child(odd) {width: 100px; font-weight: 600;}
+.inputList tbody > tr > td:nth-child(odd) label.essential::before {content:'*'; color: rgb(77, 77, 255);}
+.inputList tbody > tr > td:nth-child(even) {width: calc(100% - 100px);}
+.inputList tbody > tr.double > td:nth-child(even) {width: calc(100% - 200px);}
+.inputList tbody > tr > td:nth-child(even) input {font-size: 15px; width: 100%; height: 40px; margin: 6px 0; border: 1px solid #ccc; border-radius: 5px; padding: 4px 8px;}
 
