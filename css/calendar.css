@@ -1,11 +1,9 @@
-.scriptCalendar {
-  width: 100%; 
-}
+.scriptCalendar {width: 100%; }
 
 a { color:#333; text-decoration:none; }
-.scriptCalendar { text-align:center; border-collapse: collapse; border-spacing: 0;}
+.scriptCalendar { text-align:center; border-collapse: collapse; border-spacing: 0; border: none;}
 
-.scriptCalendar > thead > tr > td { width:50px; height:50px;}
+.scriptCalendar > thead > tr > td { width:50px; height:50px; border: none;}
 .scriptCalendar > thead > tr:first-child > td { font-weight:bold; height: 85px;}
 .scriptCalendar > thead > tr:last-child > td { background-color:#fff; color: #777; font-weight: bold; border-top: 1px solid #efefef;}
 .scriptCalendar > thead > tr > td.day { font-size: 22px; color: #333;}
@@ -66,9 +64,9 @@ a { color:#333; text-decoration:none; }
 
 
 .inputList_t {text-align: right; font-size: 14px; margin-bottom: 4px; color: #666}
-.inputList {width: 100%; border-spacing: 0px;}
-.inputList tbody > tr {}
-.inputList tbody > tr > td {padding-left: 14px;}
+.inputList {width: 100%; border-spacing: 0px; border: none;}
+.inputList tbody > tr {border: none;}
+.inputList tbody > tr > td {padding-left: 14px; border: none;}
 .inputList tbody > tr > td:nth-child(odd) {width: 100px; font-weight: 600;}
 .inputList tbody > tr > td:nth-child(odd) label.essential::before {content:'*'; color: rgb(77, 77, 255);}
 .inputList tbody > tr > td:nth-child(even) {width: calc(100% - 100px);}

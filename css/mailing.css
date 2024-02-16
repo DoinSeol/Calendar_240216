@@ -1,0 +1,34 @@
+@charset "UTF-8";
+/* reset */
+html, body, div, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, address, dl, dt, dd, ol, ul, li, fieldset, form, legend, table, caption, tbody, tfoot, thead, tr, th, td, input, select, textarea, figure, figcaption, header, footer, menu, nav, section, summary, audio, video, button{margin:0; padding:0; -webkit-print-color-adjust:exact;}
+hr{display:none;}
+ul, ol, li{list-style:none;}
+img, fieldset{border:none; vertical-align:middle;}
+h1, h2, h3, h4, h5, h6, th{color:#303030; font-size:100%; font-weight:400;}
+table{border-collapse:collapse; font-size:100%;}
+address, em, optgroup{font-style:normal;}
+object{vertical-align:top;}
+input, button, select{vertical-align:middle;}
+article, aside, details, hgroup, main, figure, figcaption, header, footer, menu, nav, section, summary{display:block;}
+audio, canvas, progress, video{display:inline-block; vertical-align:baseline;}
+
+button{box-shadow:none; border:none; font-size:15px; vertical-align:top; border-radius:0; background:none;}
+button:hover,
+button:active,
+button:focus{cursor:pointer;}
+
+/* linkStyle */
+a{color:#333; text-decoration:none; background-color:transparent;} /** * IE10에서 활성화(active)된 링크의 회색 배경을 제거. */
+
+a:active,
+a:focus,
+a:hover{text-decoration:underline;}
+a[href^="tel"]{color:inherit; text-decoration:none;}
+
+/* font */
+body{font-family:"Noto Sans KR", "Malgun Gothic", "맑은고딕", "Dotum", "돋움", "Montserrat", "Arial", "sans-serif";}
+input, select, textarea{font-family:"Noto Sans KR", "Malgun Gothic", "맑은고딕", "Dotum", "돋움", "Montserrat", "Arial", "sans-serif";}
+
+
+.title:before{position:absolute; content:""; top:0; left:0; width:25px; height:6px; background:#b10418;}
+.title:after{position:absolute; content:""; top:0; left:25px; width:10px; height:6px; background:#ffb400;}
