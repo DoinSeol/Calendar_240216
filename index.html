@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>calender sample</title>
+  <link rel="stylesheet" href="./css/common.css">
+  <link rel="stylesheet" href="./css/calendar.css">
+  <script src="./js/calender.js" defer></script>
+</head>
+<body>
+  <div id="sub_content" class="inner">
+    <div id="sub_sidemenu">
+      <h2 class="skip">사이드 메뉴 영역</h2>
+    </div>
+    <div id="content">
+      <div id="content_info">
+        <h3 class="sub_tit">방문예약</h3>
+      </div>
+      <h4>방문 예약 안내</h4>
+
+      <div class="h4_wrap mb40 c010401">
+        <div class="info_box">
+          <div class="info_inner">
+            <ul class="ul_list">
+              <li>스마트팜 혁신밸리 방문예약은 2주 전부터 예약 가능합니다.</li>
+              <li>화요일 10:00 ~ 12:00</li>
+              <li>목요일 13:00 ~ 16:00</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="h5_wrap mb40">
+        <table class="scriptCalendar">
+            <thead>
+                <tr>
+                    <td class="calendarBtn back" id="btnPrevCalendar"></td>
+                    <td class="day" colspan="5">
+                        <span id="calYear">YYYY</span>년
+                        <span id="calMonth">MM</span>월
+                    </td>
+                    <td class="calendarBtn forward" id="nextNextCalendar"></td>
+                </tr>
+                <tr>
+                    <td>일</td><td>월</td><td>화</td><td>수</td><td>목</td><td>금</td><td>토</td>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+      </div>
+
+      <h5>방문 예약 신청서 작성</h5>
+      <div class="h5_wrap mb40">
+        <p class="inputList_t">*표시는 필수 입력 사항입니다.</p>
+        <table class="inputList">
+          <tbody>
+            <tr class="double">
+              <td><label class="essential" for="organ">단체명</label></td>
+              <td><input type="text" id="organ" placeholder="단체명(기관명)"></td>
+              <td><label class="essential" for="mail">이메일</label></td>
+              <td><input type="text" id="mail" placeholder="이메일"></td>
+            </tr>
+            <tr class="double">
+              <td><label class="essential" for="name"></label>예약자명</td>
+              <td><input type="text" id="name" placeholder="예약자명"></td>
+              <td><label class="essential" for="phone">연락처</label></td>
+              <td><input type="text" id="phone" placeholder="연락처"></td>
+            </tr>
+            <tr class="double">
+              <td><label class="essential" for="date">방문일자</label></td>
+              <td><input type="date" id="date" placeholder="방문일자"></td>
+              <td><label class="essential" for="num">방문인원</label></td>
+              <td><input type="number" id="num" placeholder="20인 미만"></td>
+            </tr>
+            <tr>
+              <td><label class="essential" for="purpose">방문목적</label></td>
+              <td colspan="3"><input type="text" id="purpose" placeholder="방문목적"></td>
+            </tr>
+            <tr>
+              <td><label class="essential" for="pw"></label>비밀번호</td>
+              <td colspan="3"><input type="password" id="pw" placeholder="비밀번호"></td>
+            </tr>
+            
+
+          </tbody>
+        </table>
+      </div>
+
+      <h5>허가 조건</h5>
+      <div class="h5_wrap mb40">
+        <ul class="condition_box">
+          <li>
+            <p>1. 스마트팜 혁신밸리 견학시에는 반드시 관계직원이 안내 및 입회를 하여야 한다.</p>
+            <label>
+              <input type="radio" name="condition_01"/>
+              <span>동의함</span>
+            </label>
+          </li>
+          <li>
+            <p>2. 방문 장소 이외의 구역을 출입하거나, 사진 비디오 촬영 등을 하여서는 안된다.</p>
+            <label>
+              <input type="radio" name="condition_02"/>
+              <span>동의함</span>
+            </label>
+          </li>
+        </ul>
+      </div>
+
+      <h5>개인정보 수집 및 이용 동의서</h5>
+      <div class="h5_wrap mb40">
+        <ul class="consent_txt_box">
+          <li>
+            <p>1. 개인정보의 수집 및 이용 목적</p>
+            <p>견학프로그램 신청</p>
+          </li>
+          <li>
+            <p>2. 수집하려는 개인정보의 항목</p>
+            <p>예약자명, 연락처, 이메일, 비밀번호</p>
+          </li>
+          <li>
+            <p>3. 개인정보의 보유 및 이용기간</p>
+            <p>견학프로그램 신청 후 1개월 까지</p>
+          </li>
+          <li>
+            <p>4. 동의 거부권리와 거부에 따른 불이익</p>
+            <p>위의 개인정보 수집 및 이용에 동의하지 않으실 수 있으나, 동의하지 않는 경우 방문 예약 신청 서비스 이용에 제약이 있을 수 있습니다.</p>
+          </li>
+        </ul>
+
+        <div class="consent_box">
+          <p>위 개인정보 수집 및 이용에</p>
+          <label>
+            <input type="radio" name="consent_01"/>
+            <span>동의함</span>
+          </label>
+          <label>
+            <input type="radio" name="consent_01"/>
+            <span>동의하지 않음</span>
+          </label>
+        </div>
+
+      </div>
+
+      <div class="page_bt_box">
+        <input type="submit" value="뒤로가기">
+        <input type="submit" value="신청하기">
+      </div>
+
+    </div>
+    
+  </div>
+
+</body>
+</html>
